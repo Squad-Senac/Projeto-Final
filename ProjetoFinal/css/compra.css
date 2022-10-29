@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2? family= Old+Standard+TT & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Arapey:ital@1 & family= Old+Standard+TT:ital@1 & display=swap');
+*{margin: 0; padding: 0;
+    text-decoration: none;}
+
+
+/*Menu inicial (header): 
+    - Menu de navegação com carrinho de compras e barra de pesquisa
+    - Carrosel de fotos
+    - Logo 
+*/
+
+header{
+    height: 300px;
+    width: 100%;
+    min-width: 320px;
+    margin: auto;
+    box-shadow: 1px 7px 4px rgb(0 0 0 / 69%);
+
+    background-image: url('../img/car2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 16%;
+}
+
+
+/* Barra Navegação (quem somos, Produtos etc. + imagens e logo)*/
+
+.navegaçao{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Arapey', serifa;
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.navegaçao a{
+    margin: auto;
+    text-decoration: none;
+    color: beige;
+    cursor: pointer;
+    transition: all .2seg;
+    position: relative;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 50%;
+}
+
+#carrinho{
+    width: 40px;
+}
+
+#lupa{
+    width: 40px;
+    margin-left: 16px;
+}
+
+@media only screen and (max-width: 650px){  /*Condição para mudar o menu quando tiver numa tela pequena*/
+
+    header{
+        height: 400px;
+        width: 100%;
+        min-width: 320px;
+        margin: auto;
+        padding-bottom: 20px;
+        box-shadow: 1px 7px 4px rgb(0 0 0 / 69%);
+    
+        background-image: url('../img/car2.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 30%;
+    }
+
+    .navegaçao{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: 'Arapey', serifa;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .logo{
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    #carrinho{
+        width: 40px;
+    }
+    
+    #lupa{
+        width: 35px;
+    }
+}
+
+.carrinho{
+    width: 30px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.saiba{
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.726);
+    border-radius: 10px;
+    color:rgb(128, 128, 128);
+    cursor: pointer;
+    transition: all .2seg;
+}
+.saiba:hover{
+    background: rgba(207, 133, 68, 0.61);
+    color: beige;
+}
+
+/*-------------------------FIM do Menu inicial Header------------------------*/
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Itens de compra mais vendidos */
+
+.itens-oferta{
+    background: rgb(255, 255, 255);
+    width:25%;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border:1px rgba(0, 0, 0, 0.274) solid ;
+    border-radius: 10px;
+    margin-left:5%;
+    margin-bottom: 2%;
+    font-family: 'Arapey', serifa;
+    font-size: 18px;
+    font-style: italic;
+    display: inline-block;
+}
+
+.itens-oferta button{
+    padding: 3px;
+    background: rgb(212, 139, 75);
+    color: aliceblue;
+    border-color: rgb(119, 119, 119);
+    border-radius: 4px;
+    font-family: 'Arapey', serifa;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.itens-oferta button:hover{
+    background: rgb(206, 166, 132);
+    color: aliceblue;
+    border-color: rgb(119, 119, 119);
+    }
+.img-oferta{
+    width: 40%;
+}
+
+
+@media(max-width:500px){
+    .itens-oferta{
+        display: block;
+        width:60%;
+        margin-left: 90px;
+        margin-bottom: 20px;
+    }
+}
+
+/*Rodapé style*/
+footer{
+    display: block;
+    align-items: center;
+    padding: 0;
+    font-family: 'Arapey', serifa;
+   
+    }
+
+.navFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(8, 4, 7, 0.815);
+    color: #f5f5f5dd;   
+    
+    }
+
+.liFooter{
+    list-style: none;
+    line-height: 28px;
+    align-items: center;
+    }
+
+.liFooterzinho{
+    list-style: none;
+    line-height: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.aFooter{
+    color: rgb(26, 2, 2);
+    text-decoration-line: none;
+    color:  #f5f5f5dd;     
+}
+
+.aFooter:hover{
+    color: #cb941a;
+    transition: 0.2s all;
+    }
+
+.fraseFooter{
+    display: flex;
+    color:  #f5f5f5dd; 
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(17, 17, 17, 0.884);
+    height: 40px;
+}
+
+.footerimg{
+    display: flex;
+    flex-direction: row;
+}
+
+.endfooter{
+    margin-top: 20px;
+}
+
+.imgfofo{
+    margin-top: 20px;
+    margin-right: 15px;
+    border-radius: 3px;
+    width: 30px;
+    align-items: center;
+}
+
+/*Fim Rodapé style*/ 
+

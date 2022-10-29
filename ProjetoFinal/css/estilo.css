@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2? family= Old+Standard+TT & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Arapey:ital@1 & family= Old+Standard+TT:ital@1 & display=swap');
+* { margin: 0; padding: 0; }
+
+/*Menu inicial (header): 
+    - Menu de navegação com carrinho de compras e barra de pesquisa
+    - Carrosel de fotos
+    - Logo 
+*/
+
+header{
+    height: 300px;
+    width: 100%;
+    min-width: 320px;
+    margin: auto;
+    box-shadow: 1px 7px 4px rgb(0 0 0 / 69%);
+
+    background-image: url('../img/principal.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+}
+
+/* Barra Navegação (quem somos, Produtos etc. + imagens e logo)*/
+
+.navegaçao{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Arapey', serifa;
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.navegaçao a{
+    margin: auto;
+    text-decoration: none;
+    color: beige;
+    cursor: pointer;
+    transition: all .2seg;
+    position: relative;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 50%;
+}
+
+#carrinho{
+    width: 50px;
+    background: rgba(128, 128, 128, 0.486);
+}
+
+#lupa{
+    width: 50px;
+    margin-left: 16px;
+    background: rgba(128, 128, 128, 0.486);
+}
+
+@media only screen and (max-width: 650px){  /*Condição para mudar o menu quando tiver numa tela pequena*/
+
+    header{
+        height: 400px;
+        width: 100%;
+        min-width: 320px;
+        margin: auto;
+        padding-bottom: 20px;
+        box-shadow: 1px 7px 4px rgb(0 0 0 / 69%);
+    
+        background-image: url('../img/principal.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 30%;
+    }
+
+    .navegaçao{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: 'Arapey', serifa;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .logo{
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    #carrinho{
+        width: 100px;
+    }
+    
+    #lupa{
+        width: 35px;
+    }
+}
+
+/*Configurações e efeitos de hover no menu*/
+.menu::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.menu:hover::after{
+    width: 100%;
+}
+
+/*Carrosel de imagens do Menu*/
+
+/*.carrosel{
+    width:100%;
+    height: 100%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.705);
+    overflow: hidden;
+    position: absolute;
+    z-index:auto;
+}
+
+.carrosel ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.carrosel li{
+    position: relative;
+    animation: slide 15s infinite ease-in-out;
+}
+
+.carrosel li img{
+    width: 1530px;
+    height: 550px;
+}
+
+@keyframes slide{
+    0%{ left: 0px;}
+    20%{left: 0px;}
+
+    30%{left: -100%;}
+    50%{left: -100%;}
+
+    60%{left: -200%;}
+    80%{left: -200%;}
+    100%{left:0px}
+}
+
+@media only screen and (max-width: 650px) {
+    .carrosel li img{
+        width: 483px;
+    }
+    @keyframes slide{
+    0%{ left: 0px;}
+    20%{left: 0px}
+
+    30%{left: -100%;}
+    50%{left: -100%;}
+
+    60%{left: -200%;}
+    80%{left: -200%;}
+    100%{left:0px}
+    
+    .carrosel{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+}
+.imgcar{
+    width: 400px;
+    height: 400px;
+}
+
+.texto{
+    margin-left:-3048px;
+}
+
+.saiba{
+    display: hidden;
+}
+
+.saiba{
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.726);
+    border-radius: 10px;
+    color:rgb(128, 128, 128);
+    cursor: pointer;
+    transition: all .2seg;
+}
+.saiba:hover{
+    background: rgba(207, 133, 68, 0.61);
+    color: beige;
+}
+
+.texto{
+    position: absolute;
+    font-size: 32px;
+    left: 350px;
+    top: 330px;
+    z-index: auto;
+    color: beige;
+    font-family: 'Arapey', serifa;
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+}*/
+
+
+/*---------------------Fim do Menu Inicial--------------------------------*/ 
+
+/*Corpo da Pagina inicial (body): 
+    - Textos sobre o site
+    - Catálogo de itens
+    - Rodapé
+*/
+
+body{
+    background: rgb(244, 248, 248);
+}
+.corpo{
+    margin-top: 100px;
+    width: 100%;
+    padding-bottom: 4%;
+    background: rgb(255, 255, 255);
+}
+
+.historia{
+    max-width: 900px;
+    margin: auto;
+    border: 3px solid rgba(207, 133, 68, 0.61);
+    border-radius: 20px;
+    padding-bottom: 18px;
+}
+
+.historia h1{
+    text-align: center;
+    font-family: 'Old Standard TT', serifa;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.historia p{
+    text-align: center;
+    font-family: 'Arapey', serifa;
+    font-size: 20px;
+    font-style: italic;
+    padding: 0% 5%;
+    margin: 10px;
+    
+}
+
+.saiba-mais{
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(207, 133, 68, 0.61);
+    color: beige;
+    font-size: 23px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2seg;
+}
+.saiba-mais:hover{
+    background: rgba(223, 168, 121, 0.61);
+    color: beige;
+}
+
+#titulo{ /*id dos titulos h1 e*/
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    outline: 10px 10px solid black;
+    margin-bottom: 20px;
+}
+center h1{
+    font-family: 'Old Standard TT', serifa;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:500px) {
+    .historia{
+        margin-top: 100%;
+        
+    }
+    .corpo{
+        margin-left: 60px;
+    }
+    body{  
+        width:400px;
+    }
+
+    .nav{
+        display: block;
+        column-count: 5;
+        width: 8.25%;
+
+    }
+    .itens{
+        margin-left: 100px;
+    }
+    
+}
+.itens{ /*css do vinhos definidos por tipos*/
+    margin-top: 100px;
+    margin-left: 80px;
+    align-items: center;
+ }
+
+ #vinhobranco{
+    width: 240px;
+    margin-left: 15px;
+ }
+
+.itens a{
+    display: inline-block;
+    text-decoration:none;
+    text-align: center;
+    color: black;
+    font-family: 'Arapey', serifa;
+    font-size: 18px;
+    font-style: italic;
+ }
+
+.itens a:hover{
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    color:sandybrown;
+}
+
+.itens a img{
+ width: 300px; /* 60 / 960 = 0.0625 */
+}
+
+.itens a img:hover{
+    cursor: pointer;
+    transition: all .3s;
+}
+
+@media(max-width:500px){
+    .itens a{
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 50px ;
+        cursor:pointer;
+        transition: all .2seg;
+        color: black;
+    }
+}
+
+/*CSS do itens mais vendidos com fotos*/
+
+#lista-itens{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.itens-oferta{
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5% 2%;   
+    width: 20%;
+    margin: auto;
+    border:1px rgba(0, 0, 0, 0.274) solid ;
+    font-family: 'Arapey', serifa;
+    font-size: 18px;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+.itens-oferta button{
+padding: 2px;
+background: rgb(212, 139, 75);
+color: aliceblue;
+border-color: rgb(119, 119, 119);
+font-family: 'Arapey', serifa;
+font-size: 18px;
+font-style: italic;
+}
+.itens-oferta button:hover{
+    background: rgb(206, 166, 132);
+    color: aliceblue;
+    border-color: rgb(119, 119, 119);
+    cursor: pointer;
+    }
+.img-oferta{
+    width: 40%;
+}
+
+center hr{
+    width: 80px;
+    background: black;
+}
+
+@media(max-width:500px){
+    .itens-oferta{
+        display: block;
+        width:60%;
+        margin-left: 90px;
+        margin-bottom: 20px;
+    }
+}
+
+/*-----------------------FIM do Corpo da Pagina inicial (body)--------------------------------------*/
+
+
+/*Rodapé style*/
+footer{
+    display: block;
+    align-items: center;
+    padding: 0;
+    font-family: 'Arapey', serifa;
+   
+    }
+
+.navFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(8, 4, 7, 0.815);
+    color: #f5f5f5dd;   
+    
+    }
+
+.liFooter{
+    list-style: none;
+    line-height: 28px;
+    align-items: center;
+    }
+
+.liFooterzinho{
+    list-style: none;
+    line-height: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.aFooter{
+    color: rgb(26, 2, 2);
+    text-decoration-line: none;
+    color:  #f5f5f5dd;     
+}
+
+.aFooter:hover{
+    color: #cb941a;
+    transition: 0.2s all;
+    }
+
+.fraseFooter{
+    display: flex;
+    color:  #f5f5f5dd; 
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(17, 17, 17, 0.884);
+    height: 40px;
+}
+
+.footerimg{
+    display: flex;
+    flex-direction: row;
+}
+
+.endfooter{
+    margin-top: 20px;
+}
+
+.imgfofo{
+    margin-top: 20px;
+    margin-right: 15px;
+    border-radius: 3px;
+    width: 30px;
+    align-items: center;
+}
+
+/*Fim Rodapé style*/ 

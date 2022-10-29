@@ -1,0 +1,19 @@
+
+
+@font-face {
+     font-family: 'monotypemodern';
+     src: url('../contents/fonts/monotype-modern-std-condensed.otf') format('woff2');
+     font-weight: 800;
+     font-style:italic;
+   
+   }
+
+   @font-face {
+     font-family: 'scotchdeck';
+     src: url('../contents/fonts/ScotchDeck-Light.ttf') format('truetype');
+     font-weight: 900;
+     font-style: normal;
+   
+   }
+
+   
